@@ -31,18 +31,22 @@ export default function App() {
       <main>
         <Hero />
         <Suspense fallback={<Loader />}>
-          <Benefits />
-          <CatalogSection />
-          <SeriesSection />
-          <DevicesSection />
-          <Pricing />
-          <HowItWorks />
-          <FAQ />
-          <FinalCTA />
+          <div className="content-auto">
+            <Benefits />
+            <CatalogSection />
+            <SeriesSection />
+            <DevicesSection />
+            <Pricing />
+            <HowItWorks />
+            <FAQ />
+            <FinalCTA />
+          </div>
         </Suspense>
       </main>
       <Suspense fallback={null}>
-        <Footer />
+        <div className="content-auto">
+          <Footer />
+        </div>
         <WhatsAppButton />
       </Suspense>
     </div>

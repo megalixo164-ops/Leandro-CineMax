@@ -1,6 +1,5 @@
 // src/components/Hero.tsx
-import { motion } from 'motion/react';
-import { Monitor, Zap, Tv, Smartphone, Play } from 'lucide-react';
+import { Monitor, Zap, Tv, Smartphone } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -20,12 +19,7 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-12 lg:gap-8">
           
           {/* Text Content */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="w-full text-center max-w-4xl pt-4"
-          >
+          <div className="w-full text-center max-w-4xl pt-4 animate-fade-up opacity-0">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold leading-tight mb-4 md:mb-6 mt-2 md:mt-12">
               Viva o cinema<br />
               <span className="text-gradient">sem sair de casa</span>
@@ -73,7 +67,7 @@ export default function Hero() {
                 <span>Smart TV, Box e Celular</span>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
