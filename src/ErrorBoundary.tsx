@@ -1,39 +1,30 @@
-import React, { Component, ErrorInfo, ReactNode } from "react";
+import React from "react";
 
-interface Props {
-  children?: ReactNode;
-}
+export class ErrorBoundary extends React.Component<{ children?: React.ReactNode }, { hasError: boolean, error: Error | null }> {
+  constructor(props: { children?: React.ReactNode }) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
 
-interface State {
-  hasError: boolean;
-  error: Error | null;
-}
-
-export class ErrorBoundary extends Component<Props, State> {
-  public state: State = {
-    hasError: false,
-    error: null
-  };
-
-  public static getDerivedStateFromError(error: Error): State {
+  static getDerivedStateFromError(error: Error) {
     return { hasError: true, error };
   }
 
-  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     console.error("Uncaught error:", error, errorInfo);
   }
 
-  public render() {
+  render() {
     if (this.state.hasError) {
       return (
         <div className="min-h-screen bg-black-deep text-white-ice flex flex-col items-center justify-center p-8">
           <h1 className="text-3xl font-bold text-neon-red mb-4">Oops, ocorreu um erro!</h1>
           <p className="text-gray-400 mb-6">Infelizmente uma parte do aplicativo falhou ao carregar.</p>
-          <pre className="bg-graphite border border-white/10 p-4 rounded-xl text-sm overflow-auto text-left max-w-full text-gray-300">
+          <pre className="bg-graphite border border-white/10 p-4 rounded-xl text-sm overflow-auto text-left max-w-full text-gray-300 font-mono">
             {this.state.error?.message}
           </pre>
           <button 
-            className="mt-8 px-6 py-3 bg-neon-blue/20 text-neon-blue rounded-full border border-neon-blue/30"
+            className="mt-8 px-6 py-3 bg-neon-blue/20 text-neon-blue rounded-full border border-neon-blue/30 hover:bg-neon-blue/30 transition-colors"
             onClick={() => window.location.reload()}
           >
             Tentar novamente

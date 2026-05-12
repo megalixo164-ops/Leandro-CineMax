@@ -1,5 +1,4 @@
 // src/components/SeriesSection.tsx
-import { motion } from 'motion/react';
 import { Layers, Clock, Grid3X3, Smile, Play } from 'lucide-react';
 
 export default function SeriesSection() {

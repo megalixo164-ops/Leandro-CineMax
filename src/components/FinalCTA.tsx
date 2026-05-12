@@ -1,5 +1,4 @@
 // src/components/FinalCTA.tsx
-import { motion } from 'motion/react';
 import { Play } from 'lucide-react';
 
 export default function FinalCTA() {
@@ -12,11 +11,7 @@ export default function FinalCTA() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+        <div 
           className="max-w-4xl mx-auto bg-graphite/40 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 md:p-16 text-center shadow-[0_0_50px_rgba(123,44,255,0.15)] relative overflow-hidden group"
         >
           {/* Animated glow on hover */}
@@ -43,7 +38,7 @@ export default function FinalCTA() {
               <span className="relative z-10 font-bold text-lg md:text-xl text-white">Assinar agora por R$29,90/mês</span>
             </div>
           </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

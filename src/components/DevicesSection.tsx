@@ -1,5 +1,4 @@
 // src/components/DevicesSection.tsx
-import { motion } from 'motion/react';
 import { Tv, Monitor, Smartphone, Tablet, LaptopMinimal } from 'lucide-react';
 
 export default function DevicesSection() {
@@ -25,19 +24,15 @@ export default function DevicesSection() {
 
         <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-16">
           {devices.map((dev, idx) => (
-            <motion.div
+            <div
               key={idx}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1, duration: 0.5 }}
               className="flex flex-col items-center gap-4 group"
             >
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-black-deep border border-white/10 flex items-center justify-center shadow-lg group-hover:border-neon-blue/50 group-hover:shadow-[0_0_20px_rgba(0,207,255,0.2)] transition-all">
                 <dev.icon className="w-10 h-10 md:w-12 md:h-12 text-gray-400 group-hover:text-neon-blue transition-colors" strokeWidth={1.5} />
               </div>
               <span className="font-medium text-gray-300 group-hover:text-white transition-colors">{dev.name}</span>
-            </motion.div>
+            </div>
           ))}
         </div>
         

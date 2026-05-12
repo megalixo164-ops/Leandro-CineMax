@@ -1,5 +1,4 @@
 // src/components/Pricing.tsx
-import { motion } from 'motion/react';
 import { Check } from 'lucide-react';
 
 export default function Pricing() {
@@ -28,13 +27,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="max-w-md mx-auto"
-        >
+        <div className="max-w-md mx-auto">
           <div className="relative rounded-3xl p-[2px] overflow-hidden group">
             {/* Animated Gradient Border */}
             <div className="absolute inset-0 bg-[conic-gradient(from_0deg,transparent_0_340deg,#00CFFF,#7B2CFF,#FF2BD6)] group-hover:bg-[conic-gradient(from_0deg,#00CFFF,#7B2CFF,#FF2BD6,#00CFFF)] animate-[spin_4s_linear_infinite]"></div>
@@ -78,7 +71,7 @@ export default function Pricing() {
 
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

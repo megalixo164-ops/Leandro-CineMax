@@ -1,5 +1,4 @@
 // src/components/CinemaSection.tsx
-import { motion } from 'motion/react';
 
 export default function CinemaSection() {
   return (
@@ -11,13 +10,7 @@ export default function CinemaSection() {
       </div>
 
       <div className="container mx-auto px-4 relative z-20 text-center">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto bg-black/40 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]"
-        >
+        <div className="max-w-3xl mx-auto bg-black/40 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-gray-300 mb-6 backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-neon-pink animate-pulse"></span>
             Cinema em Casa
@@ -28,7 +21,7 @@ export default function CinemaSection() {
           <p className="text-xl text-gray-300 drop-shadow-md">
             Prepare a pipoca, escolha seu conteúdo e aproveite uma experiência visual moderna, estável e prática.
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

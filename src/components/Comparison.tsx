@@ -1,5 +1,4 @@
 // src/components/Comparison.tsx
-import { motion } from 'motion/react';
 import { X, Check } from 'lucide-react';
 
 export default function Comparison() {
@@ -22,10 +21,7 @@ export default function Comparison() {
           </h2>
         </div>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div 
           className="bg-graphite/40 border border-white/5 rounded-2xl overflow-hidden backdrop-blur-sm"
         >
           <div className="overflow-x-auto">
@@ -66,7 +62,7 @@ export default function Comparison() {
               </tbody>
             </table>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

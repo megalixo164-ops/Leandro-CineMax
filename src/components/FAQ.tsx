@@ -1,6 +1,5 @@
 // src/components/FAQ.tsx
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
 
 export default function FAQ() {
@@ -51,12 +50,8 @@ export default function FAQ() {
             const isOpen = openIndex === idx;
             
             return (
-              <motion.div 
+              <div 
                 key={idx}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
                 className="border border-white/10 rounded-xl overflow-hidden bg-graphite/30"
               >
                 <button
@@ -69,22 +64,14 @@ export default function FAQ() {
                   </div>
                 </button>
                 
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="p-6 pt-0 text-gray-400 border-t border-white/5">
-                        <p>{faq.a}</p>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+                <div
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                >
+                  <div className="p-6 pt-0 text-gray-400 border-t border-white/5">
+                    <p>{faq.a}</p>
+                  </div>
+                </div>
+              </div>
             );
           })}
         </div>

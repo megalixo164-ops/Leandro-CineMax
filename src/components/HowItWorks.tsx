@@ -1,5 +1,4 @@
 // src/components/HowItWorks.tsx
-import { motion } from 'motion/react';
 
 export default function HowItWorks() {
   const steps = [
@@ -34,12 +33,8 @@ export default function HowItWorks() {
           <div className="hidden md:block absolute top-[60px] left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink opacity-30"></div>
 
           {steps.map((step, idx) => (
-            <motion.div 
+            <div 
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.2 }}
               className="relative flex flex-col items-center text-center"
             >
               <div className="w-32 h-32 relative mb-6 flex items-center justify-center">
@@ -53,7 +48,7 @@ export default function HowItWorks() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
               <p className="text-gray-400">{step.text}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
 

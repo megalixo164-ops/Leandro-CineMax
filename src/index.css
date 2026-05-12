@@ -38,6 +38,7 @@
 @layer utilities {
   .animate-fade-up {
     animation: fade-up 0.8s ease-out forwards;
+    will-change: transform, opacity;
   }
 
   @keyframes fade-up {

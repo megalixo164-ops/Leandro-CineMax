@@ -1,5 +1,4 @@
 // src/components/Benefits.tsx
-import { motion } from 'motion/react';
 import { Film, RefreshCw, MonitorPlay, Zap, MonitorSmartphone, CreditCard } from 'lucide-react';
 
 export default function Benefits() {
@@ -64,14 +63,10 @@ export default function Benefits() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {benefits.map((benefit, index) => (
-            <motion.div
+          {benefits.map((benefit) => (
+            <div
               key={benefit.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-glass rounded-2xl p-6 lg:p-8 hover:bg-white/[0.03] transition-colors border border-white/[0.05] hover:border-white/10 group relative overflow-hidden"
+              className="bg-glass rounded-2xl p-6 lg:p-8 hover:bg-white/[0.03] transition-all duration-300 border border-white/[0.05] hover:border-white/10 group relative overflow-hidden"
             >
               {/* Card Hover Glow effect */}
               <div className={`absolute -inset-2 bg-gradient-to-br ${benefit.color} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500 rounded-full`}></div>
@@ -90,7 +85,7 @@ export default function Benefits() {
                   {benefit.description}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
