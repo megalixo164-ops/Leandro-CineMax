@@ -25,7 +25,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-8 max-w-7xl flex items-center justify-between">
         
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="#" aria-label="Voltar para o início" className="flex items-center gap-2 group">
           <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-netflix-red via-netflix-dark to-netflix-dark p-[2px] shadow-[0_0_15px_rgba(123,44,255,0.5)] group-hover:shadow-[0_0_25px_rgba(0,207,255,0.6)] transition-all">
             <div className="bg-black-deep rounded-full w-full h-full flex items-center justify-center">
               <Play className="w-4 h-4 text-white fill-white ml-0.5" />

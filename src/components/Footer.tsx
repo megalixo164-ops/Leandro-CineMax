@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
           
           <div className="flex flex-col items-center md:items-start">
-            <a href="#" className="flex items-center gap-2 group mb-3">
+            <a href="#" aria-label="Voltar para o início" className="flex items-center gap-2 group mb-3">
               <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-tr from-netflix-red via-netflix-dark to-netflix-dark p-[1px]">
                 <div className="bg-black-deep rounded-full w-full h-full flex items-center justify-center">
                   <Play className="w-3 h-3 text-white fill-white ml-0.5" />
