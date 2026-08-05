@@ -26,7 +26,7 @@ export default function CatalogSection() {
                 </span>
               ))}
             </div>
-            <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-neon-blue/20 text-neon-blue hover:bg-neon-blue/30 border border-neon-blue/30 transition-all font-medium self-start lg:self-end">
+            <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-action-green/20 text-action-green hover:bg-action-green/30 border border-action-green/30 transition-all font-medium self-start lg:self-end">
               Solicitar meu teste grátis
             </a>
           </div>

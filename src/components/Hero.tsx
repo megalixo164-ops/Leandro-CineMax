@@ -6,9 +6,9 @@ export default function Hero() {
     <section id="home" className="relative min-h-[90vh] flex items-center pt-28 pb-16 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-neon-purple/20 rounded-full blur-[120px] mix-blend-screen opacity-50 animate-pulse"></div>
-        <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-neon-blue/15 rounded-full blur-[150px] mix-blend-screen opacity-40"></div>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[400px] bg-neon-pink/10 rounded-full blur-[150px] mix-blend-screen"></div>
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-netflix-dark/20 rounded-full blur-[120px] mix-blend-screen opacity-50 animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-netflix-red/15 rounded-full blur-[150px] mix-blend-screen opacity-40"></div>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[400px] bg-netflix-red/10 rounded-full blur-[150px] mix-blend-screen"></div>
         
         {/* Subtle grid pattern overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
@@ -34,16 +34,16 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mb-12">
-              <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto inline-block relative p-[2px] rounded-full overflow-hidden group/btn hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(123,44,255,0.3)]">
-                <span className="absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink animate-[spin_3s_linear_infinite] group-hover/btn:opacity-100 opacity-80"></span>
-                <span className="absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink opacity-80 blur-md group-hover/btn:opacity-100 transition-opacity"></span>
+              <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto inline-block relative p-[2px] rounded-full overflow-hidden group/btn hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(37,211,102,0.3)]">
+                <span className="absolute inset-0 bg-gradient-to-r from-action-green via-action-green-dark to-action-green animate-[spin_3s_linear_infinite] group-hover/btn:opacity-100 opacity-80"></span>
+                <span className="absolute inset-0 bg-gradient-to-r from-action-green via-action-green-dark to-action-green opacity-80 blur-md group-hover/btn:opacity-100 transition-opacity"></span>
                 <div className="relative bg-black-deep px-8 py-4 rounded-full flex items-center justify-center gap-3 transition-colors group-hover/btn:bg-transparent">
                   <span className="relative z-10 font-bold text-lg text-white">Assinar agora</span>
                   <span className="relative z-10 font-display text-xl md:text-2xl font-bold text-white tracking-tight">R$29,90<span className="text-sm md:text-base font-medium opacity-80">/mês</span></span>
                 </div>
               </a>
               
-              <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-colors text-white font-medium text-center backdrop-blur-sm flex items-center justify-center gap-2">
+              <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 rounded-full bg-action-green/20 hover:bg-action-green/30 border border-action-green/30 transition-all text-action-green font-medium text-center backdrop-blur-sm flex items-center justify-center gap-2">
                 Solicitar meu teste grátis
               </a>
             </div>
@@ -51,19 +51,19 @@ export default function Hero() {
             {/* Badges */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm font-medium text-gray-300 max-w-xl mx-auto">
               <div className="flex items-center gap-2 bg-graphite/50 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/5 shadow-inner">
-                <Monitor className="w-5 h-5 text-neon-blue" />
+                <Monitor className="w-5 h-5 text-netflix-red" />
                 <span>Qualidade HD e 4K</span>
               </div>
               <div className="flex items-center gap-2 bg-graphite/50 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/5 shadow-inner">
-                <Zap className="w-5 h-5 text-neon-orange" />
+                <Zap className="w-5 h-5 text-netflix-dark" />
                 <span>Acesso rápido</span>
               </div>
               <div className="flex items-center gap-2 bg-graphite/50 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/5 shadow-inner">
-                <Tv className="w-5 h-5 text-neon-pink" />
+                <Tv className="w-5 h-5 text-netflix-red" />
                 <span>Catálogo atualizado</span>
               </div>
               <div className="flex items-center gap-2 bg-graphite/50 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/5 shadow-inner">
-                <Smartphone className="w-5 h-5 text-neon-purple" />
+                <Smartphone className="w-5 h-5 text-netflix-dark" />
                 <span>Smart TV, Box e Celular</span>
               </div>
             </div>

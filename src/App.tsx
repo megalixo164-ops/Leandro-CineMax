@@ -20,7 +20,7 @@ const WhatsAppButton = lazy(() => import('./components/WhatsAppButton'));
 
 const Loader = () => (
   <div className="flex justify-center items-center py-20">
-    <div className="w-8 h-8 border-2 border-neon-purple border-t-transparent rounded-full animate-spin"></div>
+    <div className="w-8 h-8 border-2 border-netflix-dark border-t-transparent rounded-full animate-spin"></div>
   </div>
 );
 

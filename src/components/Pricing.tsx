@@ -15,7 +15,7 @@ export default function Pricing() {
   return (
     <section id="pricing" className="py-16 md:py-24 relative bg-black-deep">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-blue/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-netflix-red/10 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="container mx-auto px-4 md:px-8 max-w-7xl relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -30,14 +30,14 @@ export default function Pricing() {
         <div className="max-w-md mx-auto">
           <div className="relative rounded-3xl p-[2px] overflow-hidden group">
             {/* Animated Gradient Border */}
-            <div className="absolute inset-0 bg-[conic-gradient(from_0deg,transparent_0_340deg,#00CFFF,#7B2CFF,#FF2BD6)] group-hover:bg-[conic-gradient(from_0deg,#00CFFF,#7B2CFF,#FF2BD6,#00CFFF)] animate-[spin_4s_linear_infinite]"></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-neon-blue via-neon-purple to-neon-pink opacity-50 blur-xl"></div>
+            <div className="absolute inset-0 bg-[conic-gradient(from_0deg,transparent_0_340deg,#E50914,#B81D24,#FF0A16)] group-hover:bg-[conic-gradient(from_0deg,#E50914,#B81D24,#FF0A16,#E50914)] animate-[spin_4s_linear_infinite]"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-netflix-red via-netflix-dark to-netflix-red opacity-50 blur-xl"></div>
             
             {/* Card Content */}
             <div className="relative bg-black-deep/90 backdrop-blur-xl rounded-[22px] p-8 md:p-10 flex flex-col h-full border border-white/5">
               
               <div className="mb-8">
-                <span className="inline-block px-3 py-1 bg-neon-purple/20 text-neon-purple border border-neon-purple/30 text-xs font-bold rounded-full uppercase tracking-wider mb-4">
+                <span className="inline-block px-3 py-1 bg-netflix-dark/20 text-netflix-dark border border-netflix-dark/30 text-xs font-bold rounded-full uppercase tracking-wider mb-4">
                   Recomendado
                 </span>
                 <h3 className="text-2xl font-bold text-white mb-2">CineMax Premium</h3>
@@ -50,16 +50,16 @@ export default function Pricing() {
               <div className="flex-1 space-y-4 mb-8">
                 {features.map((feature, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="mt-1 w-5 h-5 rounded-full bg-neon-blue/20 flex items-center justify-center shrink-0">
-                      <Check className="w-3 h-3 text-neon-blue" strokeWidth={3} />
+                    <div className="mt-1 w-5 h-5 rounded-full bg-netflix-red/20 flex items-center justify-center shrink-0">
+                      <Check className="w-3 h-3 text-netflix-red" strokeWidth={3} />
                     </div>
                     <span className="text-gray-300 text-sm md:text-base leading-snug">{feature}</span>
                   </div>
                 ))}
               </div>
 
-              <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="w-full relative p-[2px] rounded-xl overflow-hidden group/btn text-center block">
-                <span className="absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink opacity-80 group-hover/btn:opacity-100 transition-opacity"></span>
+              <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="w-full relative p-[2px] rounded-xl overflow-hidden group/btn text-center block shadow-[0_0_15px_rgba(37,211,102,0.3)] hover:shadow-[0_0_25px_rgba(37,211,102,0.5)] transition-shadow duration-300">
+                <span className="absolute inset-0 bg-gradient-to-r from-action-green via-action-green-dark to-action-green opacity-80 group-hover/btn:opacity-100 transition-opacity"></span>
                 <div className="relative bg-transparent px-6 py-4 rounded-xl transition-all flex items-center justify-center">
                   <span className="relative z-10 font-bold text-lg tracking-wide text-white drop-shadow-md">Assinar agora</span>
                 </div>

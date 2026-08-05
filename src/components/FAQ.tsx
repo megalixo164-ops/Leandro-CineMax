@@ -59,8 +59,8 @@ export default function FAQ() {
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-white/[0.02] transition-colors"
                 >
                   <span className="font-medium text-lg text-gray-200">{faq.q}</span>
-                  <div className={`w-8 h-8 rounded-full border border-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? 'bg-neon-purple/20 rotate-180 border-neon-purple/30' : ''}`}>
-                    <ChevronDown className={`w-5 h-5 ${isOpen ? 'text-neon-purple' : 'text-gray-400'}`} />
+                  <div className={`w-8 h-8 rounded-full border border-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? 'bg-netflix-dark/20 rotate-180 border-netflix-dark/30' : ''}`}>
+                    <ChevronDown className={`w-5 h-5 ${isOpen ? 'text-netflix-dark' : 'text-gray-400'}`} />
                   </div>
                 </button>
                 

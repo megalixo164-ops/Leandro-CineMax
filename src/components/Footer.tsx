@@ -9,7 +9,7 @@ export default function Footer() {
           
           <div className="flex flex-col items-center md:items-start">
             <a href="#" className="flex items-center gap-2 group mb-3">
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-tr from-neon-blue via-neon-purple to-neon-orange p-[1px]">
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-tr from-netflix-red via-netflix-dark to-netflix-dark p-[1px]">
                 <div className="bg-black-deep rounded-full w-full h-full flex items-center justify-center">
                   <Play className="w-3 h-3 text-white fill-white ml-0.5" />
                 </div>
@@ -20,9 +20,9 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-neon-blue transition-colors">Termos de uso</a>
-            <a href="#" className="hover:text-neon-purple transition-colors">Política de privacidade</a>
-            <a href="#" className="hover:text-neon-pink transition-colors">Suporte</a>
+            <a href="#" className="hover:text-netflix-red transition-colors">Termos de uso</a>
+            <a href="#" className="hover:text-netflix-dark transition-colors">Política de privacidade</a>
+            <a href="#" className="hover:text-netflix-red transition-colors">Suporte</a>
           </div>
           
         </div>

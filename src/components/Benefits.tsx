@@ -8,35 +8,35 @@ export default function Benefits() {
       title: "Filmes e séries",
       description: "Conteúdos variados para você aproveitar seus momentos de entretenimento.",
       icon: Film,
-      color: "from-neon-blue to-blue-600"
+      color: "from-netflix-red to-netflix-dark"
     },
     {
       id: 2,
       title: "Catálogo atualizado",
       description: "Novidades, temporadas e opções para diferentes estilos de público.",
       icon: RefreshCw,
-      color: "from-neon-purple to-purple-600"
+      color: "from-netflix-dark to-netflix-red"
     },
     {
       id: 3,
       title: "Qualidade HD e 4K",
       description: "Imagem de alta qualidade conforme sua conexão e dispositivo.",
       icon: MonitorPlay,
-      color: "from-neon-pink to-pink-600"
+      color: "from-netflix-red to-netflix-light"
     },
     {
       id: 4,
       title: "Acesso rápido",
       description: "Receba as instruções de acesso e comece a assistir com praticidade.",
       icon: Zap,
-      color: "from-neon-orange to-orange-600"
+      color: "from-netflix-dark to-netflix-red"
     },
     {
       id: 5,
       title: "Compatível com vários dispositivos",
       description: "Use em Smart TV, TV Box, celular, tablet ou computador compatível.",
       icon: MonitorSmartphone,
-      color: "from-neon-red to-red-600"
+      color: "from-netflix-red to-netflix-dark"
     },
     {
       id: 6,

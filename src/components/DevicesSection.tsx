@@ -28,8 +28,8 @@ export default function DevicesSection() {
               key={idx}
               className="flex flex-col items-center gap-4 group"
             >
-              <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-black-deep border border-white/10 flex items-center justify-center shadow-lg group-hover:border-neon-blue/50 group-hover:shadow-[0_0_20px_rgba(0,207,255,0.2)] transition-all">
-                <dev.icon className="w-10 h-10 md:w-12 md:h-12 text-gray-400 group-hover:text-neon-blue transition-colors" strokeWidth={1.5} />
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-black-deep border border-white/10 flex items-center justify-center shadow-lg group-hover:border-netflix-red/50 group-hover:shadow-[0_0_20px_rgba(0,207,255,0.2)] transition-all">
+                <dev.icon className="w-10 h-10 md:w-12 md:h-12 text-gray-400 group-hover:text-netflix-red transition-colors" strokeWidth={1.5} />
               </div>
               <span className="font-medium text-gray-300 group-hover:text-white transition-colors">{dev.name}</span>
             </div>
@@ -37,7 +37,7 @@ export default function DevicesSection() {
         </div>
         
         <div className="flex justify-center">
-          <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-colors font-medium text-white shadow-xl">
+          <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-action-green/20 text-action-green hover:bg-action-green/30 border border-action-green/30 transition-all font-medium shadow-[0_0_15px_rgba(37,211,102,0.15)] hover:shadow-[0_0_20px_rgba(37,211,102,0.25)]">
             Solicitar meu teste grátis
           </a>
         </div>

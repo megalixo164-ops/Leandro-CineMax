@@ -35,7 +35,7 @@ export default function Comparison() {
                     Experiência comum
                   </th>
                   <th className="p-6 border-b border-white/5 text-center w-1/3 bg-white/[0.02]">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple font-bold text-lg">Leandro CineMax</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-netflix-red to-netflix-dark font-bold text-lg">Leandro CineMax</span>
                   </th>
                 </tr>
               </thead>
@@ -53,7 +53,7 @@ export default function Comparison() {
                     </td>
                     <td className="p-6 border-b border-white/5 text-center bg-white/[0.02]">
                       <div className="flex items-center justify-center gap-2">
-                        <Check className="w-5 h-5 text-neon-blue drop-shadow-[0_0_8px_rgba(0,207,255,0.5)]" />
+                        <Check className="w-5 h-5 text-netflix-red drop-shadow-[0_0_8px_rgba(0,207,255,0.5)]" />
                         <span className="text-gray-100 font-medium">{item.cinemax}</span>
                       </div>
                     </td>

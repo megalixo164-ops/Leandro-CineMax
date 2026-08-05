@@ -26,7 +26,7 @@ export default function Header() {
         
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-neon-blue via-neon-purple to-neon-orange p-[2px] shadow-[0_0_15px_rgba(123,44,255,0.5)] group-hover:shadow-[0_0_25px_rgba(0,207,255,0.6)] transition-all">
+          <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-netflix-red via-netflix-dark to-netflix-dark p-[2px] shadow-[0_0_15px_rgba(123,44,255,0.5)] group-hover:shadow-[0_0_25px_rgba(0,207,255,0.6)] transition-all">
             <div className="bg-black-deep rounded-full w-full h-full flex items-center justify-center">
               <Play className="w-4 h-4 text-white fill-white ml-0.5" />
             </div>
@@ -45,9 +45,9 @@ export default function Header() {
 
         {/* Action Button */}
         <div className="flex items-center">
-          <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="hidden sm:flex relative p-[1px] rounded-full overflow-hidden group">
-            <span className="absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink opacity-70 group-hover:opacity-100 transition-opacity blur-sm"></span>
-            <span className="absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink opacity-100"></span>
+          <a href="https://wa.me/554792733349?text=Gostaria%20de%20realizar%20meu%20teste%20gratis%2C%20no%20Leandro%20CineMax!" target="_blank" rel="noopener noreferrer" className="hidden sm:flex relative p-[1px] rounded-full overflow-hidden group shadow-[0_0_15px_rgba(37,211,102,0.3)] hover:shadow-[0_0_25px_rgba(37,211,102,0.5)] transition-shadow duration-300">
+            <span className="absolute inset-0 bg-gradient-to-r from-action-green via-action-green-dark to-action-green opacity-70 group-hover:opacity-100 transition-opacity blur-sm"></span>
+            <span className="absolute inset-0 bg-gradient-to-r from-action-green via-action-green-dark to-action-green opacity-100"></span>
             <div className="relative bg-black-deep px-6 py-2.5 rounded-full transition-all group-hover:bg-opacity-0">
               <span className="relative z-10 font-bold text-sm tracking-wide text-white group-hover:text-white">Assinar agora</span>
             </div>
